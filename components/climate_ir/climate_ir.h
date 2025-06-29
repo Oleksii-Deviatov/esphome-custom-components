@@ -47,7 +47,7 @@ class ClimateIR : public Component,
 
   /// Override control to change settings of the climate device.
   void control(const climate::ClimateCall &call) override;
-  void controlNoTransmit(const climate::ClimateCall &call) override;
+  void controlNoTransmit(const climate::ClimateCall &call);
   /// Return the traits of this controller.
   climate::ClimateTraits traits() override;
 
